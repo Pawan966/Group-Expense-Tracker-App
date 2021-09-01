@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer"
+    tools:openDrawer="start"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/mainhome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/homeanimation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/roadtrip" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar"
+            app:title=" "/>
+
+        <TextView
+            android:id="@+id/tripHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="168dp"
+            android:fontFamily="casual"
+            android:gravity="center"
+            android:text="Enjoying your trip!!"
+            android:textColor="#181C34"
+            android:textSize="35sp"
+            android:textStyle="normal"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/tripDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="236dp"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:textColor="#181C34"
+            android:textSize="40dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/navmenu"
+        app:menu="@menu/iconmenu"
+        android:background="@drawable/allbg"
+        app:headerLayout="@layout/navheader"
+        android:layout_gravity="start"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

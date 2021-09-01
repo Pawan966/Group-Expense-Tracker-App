@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddExpense"
+    android:background="@drawable/allbg">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#8FA6D2"
+        android:text="ADD EXPENSE"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/l1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/person_search"
+            android:backgroundTint="@color/black"/>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:background="#11000000"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/textview"
+        android:layout_alignTop="@id/l1"
+        android:layout_marginLeft="300dp"
+        android:src="@drawable/down"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l1"
+        android:id="@+id/l2"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/format_list"
+            android:backgroundTint="@color/black"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:id="@+id/expensetype"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:background="#11000000"
+            android:hint="Expense type"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l2"
+        android:id="@+id/l3"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/money"
+            android:backgroundTint="@color/black"/>
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="16dp"
+            android:background="#11000000"
+            android:id="@+id/amount"
+            android:inputType="numberDecimal"
+            android:hint="Enter Amount"
+            android:paddingLeft="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/l3"
+        android:id="@+id/addexpense"
+        android:backgroundTint="#F1A096"
+        android:textColor="@color/black"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="150dp"
+        android:text="ADD EXPENSE"/>
+
+</RelativeLayout>

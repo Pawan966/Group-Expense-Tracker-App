@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:id="@+id/groupmembers"
+         android:title="Group Members"/>
+
+    <item android:id="@+id/addexpense"
+        android:title="Add Expense" />
+
+    <item android:id="@+id/modifyexpense"
+        android:title="Modify Expense"/>
+
+    <item android:id="@+id/graph"
+        android:title="Expense Graph"/>
+
+    <item android:id="@+id/contributions"
+        android:title="Contributions"/>
+
+    <item android:id="@+id/tripdetail"
+        android:title="Trip Detail"/>
+</menu>

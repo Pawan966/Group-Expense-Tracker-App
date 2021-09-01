@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contributions"
+    android:background="@drawable/allbg">
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#8FA6D2"
+        android:text="CONTRIBUTIONS"
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/div_amt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:gravity="center_horizontal"/>
+
+    <com.diegodobelo.expandingview.ExpandingList
+        android:id="@+id/calculateList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/div_amt"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true">
+
+    </com.diegodobelo.expandingview.ExpandingList>
+
+</RelativeLayout>
