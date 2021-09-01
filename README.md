@@ -1,7 +1,7 @@
 - App helps users to manage their expenses while they are on a trip.
 - App maintains a digital automated diary of expenses done by the group during the trip.
 - App keeps track of expenses of every person and divides the total amount between each group member equally.
-- App specifies the name and amount of the group member to whom amount is to given.
+- App specifies the name and amount of the group member to whom amount is to be given.
 - Database used: SQLite
 - Developing environment: Android Studio.
 - Languages used: Java and XML
